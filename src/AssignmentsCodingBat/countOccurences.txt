@@ -1,0 +1,11 @@
+public int countOccurrences(String text, char target) {
+  int sum = 0;
+  
+  //search String text for target characters
+  for (int i = 0; i < text.length(); i++) {
+    if (text.charAt(i) == target) {
+      sum++;
+    }
+  }
+  return sum;
+}

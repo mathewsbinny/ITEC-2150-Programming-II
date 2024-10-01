@@ -1,0 +1,14 @@
+public int countVowels(String s) {
+   int sum = 0;
+  
+  for (int i = 0; i < s.length(); i++) {
+    char letter = s.charAt(i);
+    
+    //check char letter to find vowels
+    if( letter == 'a' || letter == 'e' || letter == 'i' || letter == 'o' || letter == 'u' || 
+        letter == 'A' || letter == 'E' || letter == 'I' || letter == 'O' || letter == 'U') {
+          sum++;
+    }
+  }
+  return sum;
+}

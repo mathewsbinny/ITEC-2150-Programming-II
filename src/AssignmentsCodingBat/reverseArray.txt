@@ -1,0 +1,13 @@
+public int[] reverseArray(int[] nums) {
+  
+  //create new empty array of same size
+  int length = nums.length;
+  int[] reverseArray = new int[length];
+  
+  //assign array values to reverseArray in reverse order
+  for (int i = 0; i < length; i++) {
+    reverseArray[i] = nums[length - 1 - i];
+  }
+  
+  return reverseArray;
+}
